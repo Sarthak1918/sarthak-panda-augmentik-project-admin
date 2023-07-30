@@ -1,0 +1,148 @@
+.hero-container {
+    width: 100%;
+    padding: 50px;
+}
+
+.first {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.quote .p1 {
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.quote p {
+    margin-top: 15px;
+    color: #8997ab;
+    line-height: 1.3;
+}
+
+.tagline {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 800px;
+    font-size: 60px;
+}
+
+
+.second {
+    min-height: 400px;
+    display: flex;
+}
+
+.second .left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 15px;
+}
+
+.second .left button {
+    padding: 10px 20px;
+    border: 1px solid #8997ab;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.second .left button:hover{
+    background-color: black;
+    color: white;
+}
+
+.left .img-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left .img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.left .img-container:hover img{
+    scale: 1.15;
+}
+
+.second .right {
+    padding-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.right{
+    padding: 10px;
+}
+
+.right-content{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.explore-btn{
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.explore-btn:hover{
+    background-color: #343434;
+}
+
+
+@media(max-width:768px){
+    .hero-container {
+        padding: 20px;
+    }
+    .first,.second {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .tagline {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .second .left {
+        margin-top: 50px;
+    }
+    .details div {
+        padding-inline: 30px;
+    }
+    .second .left button {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,32 @@
+.details-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+ .details div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+    border-right: 1px solid #8997ab ;
+}
+.details div:last-child{
+    border-right: none ;
+}
+
+
+.details div p{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.details div span{
+    font-weight: 200;
+}
+
