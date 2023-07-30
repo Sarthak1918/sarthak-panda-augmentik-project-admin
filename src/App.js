@@ -1,18 +1,15 @@
+import { useSessionStorage } from 'react-unique-hooks';
 import './App.css';
-import Article from './components/Article';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Showcase from './components/Showcase';
+import Login from './components/Login';
+import Admin from './components/Admin';
+
 
 function App() {
+  const[auth,setAuth,removeAuth] = useSessionStorage("authStatus",null)
   return (
     <div className="App">
-      <Header/>
-      <Hero/>
-      <Article />
-      <Showcase />
-      <Footer/>
+      {auth?<Admin removeAuth={removeAuth}/>:<Login setAuth={setAuth}/>}
+      
     </div>
   );
 }
